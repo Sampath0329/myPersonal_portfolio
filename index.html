@@ -2,188 +2,257 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nadish Sampath</title>
-    <link rel="stylesheet" href="style/styleSheet.css">
-<!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Animate.io -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
 <body>
-<!--  Header Section -->
+
+<!--    Header Section  -->
 <header class="header">
     <a href="#" class="logo">Portfolio</a>
 
     <nav class="navbar">
         <a href="#" style="--i:1" class="active">Home</a>
         <a href="#about-section" style="--i:2" >About</a>
+        <a href="#assigment" style="--i:2" >Assigment</a>
         <a href="#skill" style="--i:3" >Skill</a>
         <a href="#project" style="--i:4" >PortFolio</a>
         <a href="#contact" style="--i:5" >Contact</a>
     </nav>
 </header>
-<!--  Hero Section -->
-<main class="heroSection">
-    <!--******** Text Section ********-->
-    <div>
-        <h6>MY NAME IS</h6>
-        <h1><span style="color: #4A237C;">Nadish</span> Sampath</h1>
-        <p>Creative developer from Sri Lanka. Specializing in building exceptional websites, applications. Proficient in Java and C++. Passionate about UI/UX </p>
-        <nav>
-            <a href="#" >
-                <img src="assets/icon/github.png" id="githubLogo" alt="GitHub Icon">
-            </a>
-            <a href="https://web.facebook.com/nadeesh.sampath.75">
-                <img src="assets/icon/facebook.png" id="facebookLogo" alt="FaceBook Icon">
-            </a>
-        </nav>
-        <input type="button" value="Download CV">
+
+<!--    Hero Section    -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h3>Hello, It's Me</h3>
+        <h1>
+            <span>Nadish</span> Sampath
+        </h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>Creative developer from Sri Lanka. Specializing in building exceptional websites, applications.
+            <br>Proficient in Java and C++. Passionate about UI/UX</p>
+        <div class="hero-social-media">
+            <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
+            <a href="#" style="--i:7"><i class='bx bxl-instagram'></i></a>
+            <a href="#" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#" style="--i:9"><i class='bx bxl-gmail'></i></a>
+        </div>
+        <a href="#" class="btn-more-about">More About Me</a>
     </div>
-
-    <!-- Image Section -->
-    <div>
-        <img src="assets/images/nadishSampath.png" title="Nadish" alt="Nadish" width="400">
+    <div class="hero-img">
+        <img src="assets/nadishSampath.png" alt="Nadish Sampath">
     </div>
-</main>
+</section>
 
-<!--  About Section -->
-<main>
-    <!-- Image  ********-->
-    <section>
-        <img src="assets/images/nadishSampath.png" title="Nadish" alt="Nadish" width="300">
-    </section>
 
-    <!-- Text Section -->
-    <section>
-        <h2 >About me</h2>
+<!--    About Section    -->
+<section class="about-section" id="about-section">
+    <div class="about-img">
+        <img src="assets/nadishSampath.png" >
+    </div>
+    <div class="about-text">
+        <h2>About <span >Me</span></h2>
+        <h4>Full Stack Developer</h4>
+        <p>I am a Software Engineering student at IJSE and currently following my second semester. As I feel, I am passionate about studying Software Engineering at IJSE.
+            <br>And also I am eager to contribute to innovative projects that push the boundaries of technology and improve user experiences. So I believe that I have a positive attitude and good teamwork ability.</p>
+        <a href="#" class="btn-more-about"> More About Me</a>
+    </div>
+</section>
 
-        <div >
-            <p>I am a Software Engineering student at IJSE and currently following my second semester. As I feel, I am passionate about studying Software Engineering at IJSE.</p>
-            <p>And also I am eager to contribute to innovative projects that push the boundaries of technology and improve user experiences. So I believe that I have a positive attitude and good teamwork ability.</p>
+<!--     Assigment Section     -->
+<section class="assigment-section" id="assigment">
+    <div class="assigment" >
+        <div class="container">
+            <h1 class="sub-title">Assig<span>ment</span></h1>
+            <div class="assigment-list">
+                <div>
+                    <i class='bx bxs-edit'   ></i>
+                    <h2>Assigment 01</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti eaque error esse illo ipsa ipsam ipsum laboriosam libero natus nobis quisquam, quod reiciendis sed sequi sunt tenetur, vero.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-edit'  ></i>
+                    <h2>Assigment 02</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti eaque error esse illo ipsa ipsam ipsum laboriosam libero natus nobis quisquam, quod reiciendis sed sequi sunt tenetur, vero.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-edit'  ></i>
+                    <h2>Assigment 03</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti eaque error esse illo ipsa ipsam ipsum laboriosam libero natus nobis quisquam, quod reiciendis sed sequi sunt tenetur, vero.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-edit'  ></i>
+                    <h2>Assigment 04</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti eaque error esse illo ipsa ipsam ipsum laboriosam libero natus nobis quisquam, quod reiciendis sed sequi sunt tenetur, vero.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-edit'  ></i>
+                    <h2>Assigment 05</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti eaque error esse illo ipsa ipsam ipsum laboriosam libero natus nobis quisquam, quod reiciendis sed sequi sunt tenetur, vero.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bxs-edit'  ></i>
+                    <h2>Assigment 06</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at deleniti eaque error esse illo ipsa ipsam ipsum laboriosam libero natus nobis quisquam, quod reiciendis sed sequi sunt tenetur, vero.</p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+            </div>
         </div>
-    </section>
-</main>
-<!-- Assignment Section -->
-<main >
-    <h2>Assignment</h2>
-<!--  Assignment Section 1  -->
-    <section >
-        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
-    </section>
-<!-- Assignment  Section 2  -->
-    <section>
-        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
-    </section>
-</main>
+    </div>
+</section>
 
-<!-- Gallery Section -->
-<main >
-    <h2>Gallery</h2>
+<!--      Skill Section      -->
+<section class="skill" id="skill">
+    <h2>Res<span>ume</span></h2>
+    <div class="spac-timeline">
+        <ul>
+            <li>
+                <div class="spac-timeline-content">
+                    <div class="spac-timeline-number"></div>
+                    <div class="spac-timeline-icon">  </div>
+                    <div class="spac-timeline-text">
+                        <h5>Studies at Graduate Diploma</h5>
+                        <p>Institute of Software Engineering<br>2023</p>
+                    </div>
+                </div>
+            </li>
 
-<!--  Fist Section  -->
-    <section>
-        <img src="assets/icon/gallery.png" title="" alt="" width="200">
-        <img src="assets/icon/gallery.png" title="" alt="" width="200">
-        <img src="assets/icon/gallery.png" title="" alt="" width="200">
-    </section>
-<!--  Second Section  -->
-    <section>
-        <img src="assets/icon/gallery.png" title="" alt="" width="200">
-        <img src="assets/icon/gallery.png" title="" alt="" width="200">
-        <img src="assets/icon/gallery.png" title="" alt="" width="200">
-    </section>
-</main>
+            <li>
+                <div class="spac-timeline-content">
+                    <div class="spac-timeline-number"></div>
+                    <div class="spac-timeline-icon">  </div>
+                    <div class="spac-timeline-text">
+                        <h5>G.C.E A/L Examination</h5>
+                        <p>G/ Karandeniye Central College<br>2019-2021</p>
+                    </div>
+                </div>
+            </li>
 
-
-<!-- Education Section -->
-<main>
-    <h2>Resume</h2>
-<!--  Education  -->
-    <section>
-        <div >
-        <label>Graduate Diploma</label>
-            <p>Institute of Software Engineering 2023</p>
+            <li>
+                <div class="spac-timeline-content">
+                    <div class="spac-timeline-number"></div>
+                    <div class="spac-timeline-icon">  </div>
+                    <div class="spac-timeline-text">
+                        <h5>G.C.E O/L Examination</h5>
+                        <p>G/ Karandeniye Central College<br>2016 - 2018</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="skill-icon">
+        <div class="skill-title"> <i class='bx bx-laptop'></i>Languages </div>
+        <div class="icon">
+            <div>
+                <i style="color: #ff4d00" class='bx bxl-html5'></i>
+            </div>
+            <div>
+                <i style="color: #147bbc" class='bx bxl-css3'></i>
+            </div>
+            <div>
+                <i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+            </div>
+            <div>
+                <i style="color: #c32ec9" class='bx bxl-python'></i>
+            </div>
+            <div>
+                <i style="color: #69bcbc" class='bx bxl-react'></i>
+            </div>
         </div>
-        <div>
-            <label>G.C.E A/L Examination</label>
-            <p>G/ Karandeniye Central College 2019-2021</p>
-        </div>
-        <div>
-            <label>G.C.E O/L Examination</label>
-            <p>G/ Karandeniye Central College 2016 - 2018</p>
-        </div>
-    </section>
-<!--  Skills  -->
-    <section>
-        <h6>Languages</h6>
-        <div>
-            <img src="assets/icon/java.png" title="Java" alt="Java" width="40">
-            <img src="assets/icon/js.png" title="javascript" alt="javascript" width="40">
-            <img src="assets/icon/html.png" title="html" alt="html" width="40">
-            <img src="assets/icon/css.png" title="css" alt="css" width="40">
-        </div>
-    </section>
-</main>
 
-<!-- Contact Section -->
-<main>
-<!--  Text Section  -->
-    <section>
-        <h2>Let’s Contact</h2>
-        <p>I like to code and I'm always looking for new opportunities to learn and grow. I'm currently working on a few projects and I'm always open to new ideas and collaborations. If you have any questions or want to work with me, feel free to contact me.</p>
-    </section>
-<!--  Contact Section   -->
-    <section>
-        <label> Name </label>
-        <textarea></textarea><br>
-        <label> Email </label>
-        <textarea></textarea><br>
-        <label> Subject </label>
-        <textarea></textarea><br>
-        <label> Message </label>
-        <textarea></textarea><br>
-        <button>Send</button>
-    </section>
-</main>
+    </div>
+</section>
 
-<!-- Footer Section -->
-<main>
-    <section>
-        <h4>Contact</h4>
-        <div>
-<!--    Location Image        -->
-            <p>
-                <img src="assets/icon/location.png" title="Location" alt="Location" width="20">
-                No : 453/C1, Egodawela, Karandeniya
-            </p>
-<!--    Contact image        -->
-            <p>
+<!--        Project Section      -->
+<section>
+    <div class="portfolio" id="project">
+        <div class="main-text" id="project1">
+            <h2>My <span>Project</span></h2>
 
-                <img src="assets/icon/contact.png" title="Contact" alt="Contact" width="20">
-                +94769446692
-            </p>
-<!--    mail image        -->
-            <p>
-                <img src="assets/icon/mail.png" title="Gmail" alt="Gmail" width="20">
-                sampathnadeesh0329@gmail.com
-            </p>
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="assets/project/project1.png">
+                    <div class="layer">
+                        <h5>PRF Project</h5>
+                        <p>Developed a console-based Java application for a Programming Fundamentals coursework</p>
+
+                        <a href="#"><i class="bx bx-link-external" ></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/project/project2.png">
+                    <div class="layer">
+                        <h5>Connect Four Game</h5>
+                        <p>This is a game that made using JavaFx and Java OOP concepts.</p>
+
+                        <a href="#"><i class="bx bx-link-external" ></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="assets/project/project3.jpeg">
+                    <div class="layer">
+                        <h5>Restaurant Management System</h5>
+                        <p>This is a standalone application made using JavaFx and Java OOP concepts.</p>
+
+                        <a href="#"><i class="bx bx-link-external" ></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-<!--    group of contact images     -->
-        <div>
-            <a href=""><img src="assets/icon/mail.png" title="Gmail" alt="Gmail" width="20"></a><br>
-            <a href=""><img src="assets/icon/facebook.png" title="Facebook" alt="Facebook" width="20"></a><br>
-            <a href=""><img src="assets/icon/github.png" title="GitHub" alt="GitHub" width="20"></a><br>
-        </div>
-    </section>
-</main>
+    </div>
+</section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<!--        Contact Section     -->
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's work together</h4>
+        <p>I like to code and I'm always looking for new opportunities to learn and grow. I'm currently working on a few projects and I'm always open to new ideas and collaborations.
+            If you have any questions or want to work with me, feel free to contact me.</p>
+        <div class="contact-list">
+            <li><i class='bx bxs-send'></i>sampathnadeesh0329@gmail.com</li>
+            <li><i class='bx bxs-phone'></i>0769446692</li>
+        </div>
+        <div class="contact-icon">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form action="">
+            <input type="" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <input type="" placeholder="Enter Your Subject">
+            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="submit" class="send">
+        </form>
+    </div>
+</section>
+
+<div class="last-text">
+    <p>Developed by Nadsih Sampath ©️ 2024</p>
+</div>
+<a href="#" class="top">
+    <i class='bx bxs-up-arrow-square bx-flip-horizontal' ></i>
+</a>
+
+<script src="jscript.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 </body>
 </html>
