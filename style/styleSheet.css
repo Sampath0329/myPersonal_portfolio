@@ -1,38 +1,104 @@
 /* Header and navigation styling */
-header {
-    position: sticky;
-    top: 0; /* Makes the header stick to the top */
-    z-index: 1050; /* Ensures the header stays above other elements */
-    background-color: #333; /* Dark background */
-    padding: 10px 0 ; /* Added padding for a better appearance */
-    width: 100%; /* Ensure the header spans full width */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
 }
-
-.navbar {
-    list-style-type: none;
+body{
+    color: #d8d4dc;
+    background: #1a0332;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
     display: flex;
-    justify-content: flex-end; /* Align to the right */
-    align-items: center; /* Vertically align the items */
-    margin-right: 20px; /* Right padding for spacing */
-    /*padding: 0; !* Remove default padding *!*/
-    /*margin: 0; !* Remove default margin *!*/
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
-
-.navbar li {
-    margin: 0 20px;
-}
-
-.navbar a {
+.logo{
+    position: relative;
+    font-size: 25px;
+    right: 300px;
+    color: snow;
     text-decoration: none;
-    color: white; /* Text color */
-    font-size: 18px;
-    padding: 8px 15px;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.navbar>a{
+    display: inline-block;
+    font-size: 25px;
+    color: #0c64e7;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation:  slideTop .5s ease forwards;
+    animation-delay:  calc(.2s * var(--i));
+}
+.navbar>a:hover{
+    color: #0ef;
 }
 
-.navbar a:hover {
-    background-color: #555; /* Change color on hover */
-    border-radius: 5px; /* Rounded edges */
+
+
+.heroSection{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /*background: aqua;*/
+}
+.heroSection>div:nth-child(1){
+    width: 50vw;
+    padding: 5px;
+    margin-top: 190px;
+    margin-left: 90px;
+}
+.heroSection>div:nth-child(1)>h6{
+    margin-bottom: 0;
+    font-family: Plus Jakarta Sans;
+    font-weight: bold;
+    font-size: 20px;
+}
+.heroSection>div:nth-child(1)>h1{
+    margin: 0;
+    font-family: Inter;
+    font-size: 96px;
+}
+.heroSection>div:nth-child(1)>p{
+    font-size: 24px;
+}
+/*  Social media Icon */
+#facebookLogo{
+    margin-top: 50px;
+    height: 45px;
+    padding: 5px;
+}
+#githubLogo{
+    height: 40px;
+    padding: 5px;
+}
+
+.heroSection>div:nth-child(2){
+    background: #4A237C;
+    height: 500px;
+    width: 500px;
+    border-radius: 600px;
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+.heroSection>div:nth-child(2)>img{
+
 }
 
 /* Mobile responsive */
@@ -45,5 +111,48 @@ header {
 
     .navbar li {
         margin: 10px 0;
+    }
+}
+
+
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
     }
 }

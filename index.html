@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <title>Nadish Sampath</title>
     <link rel="stylesheet" href="style/styleSheet.css">
-
+<!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Animate.io -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 <!--  Header Section -->
-<header>
-    <nav>
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About me</a></li>
-        </ul>
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <nav class="navbar">
+        <a href="#" style="--i:1" class="active">Home</a>
+        <a href="#about-section" style="--i:2" >About</a>
+        <a href="#skill" style="--i:3" >Skill</a>
+        <a href="#project" style="--i:4" >PortFolio</a>
+        <a href="#contact" style="--i:5" >Contact</a>
     </nav>
 </header>
 <!--  Hero Section -->
-<main>
+<main class="heroSection">
     <!--******** Text Section ********-->
     <div>
         <h6>MY NAME IS</h6>
-        <h1>Nadish Sampath</h1>
-        <h6>Creative developer from Sri Lanka. Specializing in building exceptional websites, applications. Proficient in Java and C++. Passionate about UI/UX 1</h6>
+        <h1><span style="color: #4A237C;">Nadish</span> Sampath</h1>
+        <p>Creative developer from Sri Lanka. Specializing in building exceptional websites, applications. Proficient in Java and C++. Passionate about UI/UX </p>
+        <nav>
+            <a href="#" >
+                <img src="assets/icon/github.png" id="githubLogo" alt="GitHub Icon">
+            </a>
+            <a href="https://web.facebook.com/nadeesh.sampath.75">
+                <img src="assets/icon/facebook.png" id="facebookLogo" alt="FaceBook Icon">
+            </a>
+        </nav>
         <input type="button" value="Download CV">
     </div>
 
@@ -45,33 +55,33 @@
 
     <!-- Text Section -->
     <section>
-        <h2>About me</h2>
+        <h2 >About me</h2>
 
-        <div>
+        <div >
             <p>I am a Software Engineering student at IJSE and currently following my second semester. As I feel, I am passionate about studying Software Engineering at IJSE.</p>
             <p>And also I am eager to contribute to innovative projects that push the boundaries of technology and improve user experiences. So I believe that I have a positive attitude and good teamwork ability.</p>
         </div>
     </section>
 </main>
 <!-- Assignment Section -->
-<main>
+<main >
     <h2>Assignment</h2>
 <!--  Assignment Section 1  -->
-    <section>
-        <img src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img src="assets/icon/assignment.png" title="" alt="" width="200">
+    <section >
+        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
+        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
+        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
     </section>
 <!-- Assignment  Section 2  -->
     <section>
-        <img src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img src="assets/icon/assignment.png" title="" alt="" width="200">
-        <img src="assets/icon/assignment.png" title="" alt="" width="200">
+        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
+        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
+        <img data-aos="flip-left" src="assets/icon/assignment.png" title="" alt="" width="200">
     </section>
 </main>
 
 <!-- Gallery Section -->
-<main>
+<main >
     <h2>Gallery</h2>
 
 <!--  Fist Section  -->
@@ -94,7 +104,7 @@
     <h2>Resume</h2>
 <!--  Education  -->
     <section>
-        <div>
+        <div >
         <label>Graduate Diploma</label>
             <p>Institute of Software Engineering 2023</p>
         </div>
@@ -170,5 +180,10 @@
         </div>
     </section>
 </main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
